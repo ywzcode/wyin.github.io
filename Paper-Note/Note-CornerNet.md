@@ -1,7 +1,3 @@
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # CornerNet: Detecting Objects as Paired Keypoints
 * Note for paper CornerNet: Detecting Objects as Paired Keypoints [1] [corrnerNet](https://arxiv.org/abs/1808.01244)
 
@@ -38,7 +34,9 @@
     * instead of equally penalizing negative loca- tions, we reduce the penalty given to negative locations within a radius of the positive location.
     * Determine the radius by the size of an object by ensuring that a pair of points within the radius would generate a bounding box with at least t IoU with the ground-truth annotation $$t=0.3$$
     * Given the radius, the amount of penalty reduction is given by an unnormalized 2D Gaussian $$e^{-\frac{x^2+y^2}{2\sigma^2}}$$. center is at positive location and whose $$\sigma$$ is 1/3 of the radius.
-    * 
+    * <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">$$t=0.3$$
+</script>
 
 
 
