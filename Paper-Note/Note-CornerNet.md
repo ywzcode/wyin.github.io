@@ -1,6 +1,6 @@
 # CornerNet: Detecting Objects as Paired Keypoints
 * Note for paper CornerNet: Detecting Objects as Paired Keypoints [1] [corrnerNet](https://arxiv.org/abs/1808.01244)
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 ### Hightlights
 
   - Detect objects as paired keypoints --- top-left corner and bottom-right corner of the bounding box
@@ -26,6 +26,7 @@
 - corners provide a more efficient way of densely discretizing the space of boxes
 
 ## CornerNet
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 - use the hourglass network as the back- bone network of CornerNet.
 - predict two sets of heatmaps, one for top-left corners and one for bottom-right corners.
     * each heat map has the size of $$ C\times H \times W $$, where $$C$$ is the channels and is also the number of categories.
