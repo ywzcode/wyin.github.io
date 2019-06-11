@@ -28,7 +28,7 @@
 ## CornerNet
 - use the hourglass network as the back- bone network of CornerNet.
 - predict two sets of heatmaps, one for top-left corners and one for bottom-right corners.
-    * each heat map has the size of $$ C\times H \times W $$, where $$C$$ is the channels and is also the number of categories.
+    * each heat map has the size of $$C\times H \times W$$, where $$C$$ is the channels and is also the number of categories.
     * There is no background channel
     * Each channel is a binary mask indicating the locations of the corners for a class
     * instead of equally penalizing negative loca- tions, we reduce the penalty given to negative locations within a radius of the positive location.
